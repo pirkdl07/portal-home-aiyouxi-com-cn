@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pirkdl07.github.io/portal-home-aiyouxi-com-cn/sitemap.xml

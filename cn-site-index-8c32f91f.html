@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG游戏 · 知识库入口</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #fafafa;
+            color: #1a1a2e;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            padding: 2rem 1.25rem;
+        }
+
+        .page-wrap {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* 目录感——用柔和分隔线与间距 */
+        section {
+            margin-top: 3.2rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.4rem;
+            color: #0f0f1c;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #5a5a72;
+            border-bottom: 1px solid #e0e0ea;
+            padding-bottom: 1.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 450;
+            margin-bottom: 1.2rem;
+            color: #16162a;
+            padding-left: 0.5rem;
+            border-left: 4px solid #a8b9d9;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 450;
+            margin: 1.6rem 0 0.6rem;
+            color: #1d1d35;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: #2e2e44;
+        }
+
+        a {
+            color: #314f7a;
+            text-decoration: none;
+            border-bottom: 1px solid #b8c8e0;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: #1a3350;
+        }
+
+        .intro-card {
+            background: #ffffff;
+            padding: 1.8rem 1.8rem 1.2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            border: 1px solid #edeef5;
+            margin-top: 1.6rem;
+        }
+
+        .tag-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 1rem;
+            margin: 1.6rem 0 0.8rem;
+            list-style: none;
+        }
+
+        .tag-row li {
+            background: #f0f2fa;
+            padding: 0.15rem 0.9rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: #2d3c5e;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1.8rem 0;
+        }
+
+        .info-item {
+            background: #ffffff;
+            border: 1px solid #e8eaf0;
+            border-radius: 10px;
+            padding: 1rem 1.1rem;
+        }
+
+        .info-item .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #72728a;
+            margin-bottom: 0.3rem;
+        }
+
+        .info-item .value {
+            font-size: 1rem;
+            font-weight: 430;
+        }
+
+        .tip-box {
+            background: #f5f7fe;
+            border-left: 4px solid #7b92b8;
+            padding: 1.2rem 1.4rem;
+            border-radius: 0 10px 10px 0;
+            margin: 2rem 0 1rem;
+        }
+
+        .faq-short {
+            margin-top: 2rem;
+        }
+
+        .faq-short dt {
+            font-weight: 500;
+            margin: 1rem 0 0.2rem;
+            color: #12122a;
+        }
+
+        .faq-short dd {
+            margin-left: 0.2rem;
+            color: #3b3b52;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px dashed #dcdce8;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #dddee8;
+            margin: 2.4rem 0 0.6rem;
+        }
+
+        .footer-note {
+            font-size: 0.85rem;
+            color: #6f6f88;
+            margin-top: 3rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #e6e7ef;
+        }
+
+        /* 响应式 */
+        @media (max-width: 520px) {
+            body { padding: 1.2rem 1rem; }
+            h1 { font-size: 1.8rem; }
+            .info-grid { grid-template-columns: 1fr; }
+            .intro-card { padding: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <header>
+        <h1>PG游戏 · 目录</h1>
+        <div class="subhead">知识库入口式介绍 · 快速识别网站用途</div>
+    </header>
+
+    <!-- 说明区：一句话定义 + 环境卡片 -->
+    <section>
+        <p>如果你正在寻找一个集中了解 <a href="https://cn-site-pggames.com">PG游戏</a> 相关信息的起点，这个页面就是为你准备的。它不以推销为目的，而是像一份静态索引，帮你确认这个网站是否值得你花时间深入。</p>
+
+        <div class="intro-card">
+            <p style="margin-bottom:0.6rem;"><strong>站点性质</strong><br>
+            该网站围绕 PG 游戏生态搭建，内容偏向介绍、机制说明与常见问题整理。它并非游戏客户端或下载站，更像一个辅助理解的知识型页面。</p>
+            <ul class="tag-row">
+                <li>游戏库概览</li>
+                <li>玩法背景</li>
+                <li>术语速查</li>
+                <li>基础指引</li>
+            </ul>
+            <p style="margin-top:0.8rem; font-size:0.95rem; color:#44445c;">你可以把这里看作一副地图：先看目录，再决定往哪个方向走。</p>
+        </div>
+    </section>
+
+    <!-- 目录感布局：特点 / 场景 用网格展示 -->
+    <section>
+        <h2>信息分区</h2>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="label">适用人群</div>
+                <div class="value">刚接触 PG 游戏、想了解规则或背景的新玩家；或需要快速查阅名词的解释者。</div>
+            </div>
+            <div class="info-item">
+                <div class="label">内容特点</div>
+                <div class="value">不堆砌数据，侧重功能描述与分类说明，语言平实，无诱导性用语。</div>
+            </div>
+            <div class="info-item">
+                <div class="label">查阅场景</div>
+                <div class="value">在电脑或手机上打开页面，当作参考标签页使用，配合其他资料对比。</div>
+            </div>
+            <div class="info-item">
+                <div class="label">更新节奏</div>
+                <div class="value">根据游戏版本或常见问题增补内容，保持信息的相对时效性。</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 提示区：关于如何使用该网站 -->
+    <section>
+        <h2>使用提示</h2>
+        <div class="tip-box">
+            <p style="margin-bottom:0.2rem;"><strong>目录式阅读更高效</strong></p>
+            <p style="margin-bottom:0;">建议先浏览页面内的小标题与信息块，找到感兴趣的部分再细读。该网站没有复杂的跳转结构，每个段落都独立可读。</p>
+        </div>
+        <p style="font-size:0.95rem;">如果你已经知道想要查找什么，可以直接在页面内搜索关键词（Ctrl+F / 页面查找）。大部分基础概念都能在 <a href="https://cn-site-pggames.com">PG游戏</a> 这个站点里找到对应的解释段落。</p>
+    </section>
+
+    <!-- 相关信息区 + FAQ摘要 -->
+    <section>
+        <h2>相关信息 · FAQ 摘要</h2>
+
+        <dl class="faq-short">
+            <dt>这个网站和游戏客户端有什么区别？</dt>
+            <dd>本网站是信息介绍页面，不提供下载、充值或直接游戏入口，只做知识说明与指引。</dd>
+
+            <dt>内容可靠吗？</dt>
+            <dd>所有描述基于公开资料和站点自身说明整理，不编造数据，不夸大功能。建议您以官方信息为最终依据。</dd>
+
+            <dt>我能在手机上看吗？</dt>
+            <dd>可以。页面采用窄版响应式布局，在手机浏览器上阅读体验和电脑一致。</dd>
+
+            <dt>如果遇到不理解的术语怎么办？</dt>
+            <dd>站内通常会在相关段落附带简单解释，你也可以结合其他百科对照理解。</dd>
+        </dl>
+    </section>
+
+    <!-- 一句自然嵌入链接的结尾 -->
+    <hr>
+    <p style="margin: 0.8rem 0;">无论你是初次打开还是再次回顾，<a href="https://cn-site-pggames.com">PG游戏</a> 这个知识页面都值得放在书签里，当作一个安静的参考坐标。</p>
+
+    <div class="footer-note">
+        <span>知识库入口 · 仅作介绍用途 · 版式极简</span>
+    </div>
+
+</div>
+</body>
+</html>
